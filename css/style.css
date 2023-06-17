@@ -1,0 +1,200 @@
+@charset "UTF-8";
+body{
+	display: flex;
+	background-color: #F5F5F5;
+	font-size: 18px;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+/* aside,main共通部分 */
+h2{
+	padding: 40px 0;
+}
+ul{
+	display: flex;
+	list-style: none;
+}
+hr{
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/* aside部分 */
+.logo{
+	background-color: rgb(16, 231, 159);
+	padding: 15px 0;
+}
+.logo p{
+	color: #fff;
+	text-align: center;
+}
+.left__aside__container{
+	background-color: rgb(7, 47, 74);
+	text-align: left;
+	width: 200px;
+	height: 100%;
+}
+.aside__container p, .aside__container a{
+	color: #fff;
+	padding: 15px 0;
+}
+.MyPage{
+	margin-top: 25px;
+	translate: 30px;
+}
+.PersonalSettings{
+	translate: 30px;	
+}
+.MyPage::before{
+	content: "";
+	display: inline-block;
+	width: 30px;/*画像の幅*/
+	height: 25px;/*画像の高さ*/
+	translate: -1px -3px;
+	background-image: url(../img/home_3_line\ \(1\).png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.PersonalSettings::before{
+	content: "";
+	display: inline-block;
+	width: 30px;/*画像の幅*/
+	height: 25px;/*画像の高さ*/
+	translate: -1px -3px;
+	background-image: url(../img/face_line.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+/* main部分 */
+/* TopBar部分 */
+.TopBar{
+	background-color: #fff;
+}
+.LoginButton{
+	background-color: rgb(7, 47, 74);
+	width: 160px;
+	height: 57px;
+	margin-left: 1050px;
+}
+.dropdown__menu a{
+	color: #fff;
+}
+.dropdown__menu__list{
+	text-align: left;
+	background-color: rgb(7, 47, 74);
+	width: 160px;
+	height: 40px;
+	margin-left: 1050px;
+}
+.dropdown__menu__list a{
+	font-size: 16px;
+	padding-left: 25px;
+}
+.LoginButton__text{
+	color: #fff;
+	font-size: 16px;
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 25px;
+}
+.LoginButton__text::before{
+	content: "";
+	display: inline-block;
+	width: 20px;/*画像の幅*/
+	height: 20px;/*画像の高さ*/
+	translate: -6px -1px;
+	background-image: url(../img/face_line.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+.LoginButton__text::after{
+	content: "";
+	display: inline-block;
+	width: 20px;/*画像の幅*/
+	height: 20px;/*画像の高さ*/
+	translate: 10px -1px;
+	background-image: url(../img/down_line.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+/* .show { 
+	display: block;
+}*/
+.right__side__container{
+	padding-left: 40px;
+}
+.category__list li, .challengedProblem__list li{
+	background-color: #E5E5E5;
+	padding: 20px 25px;
+}
+.category__list li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;/*画像の幅*/
+  height: 20px;/*画像の高さ*/
+  translate: -1px -1px;
+  background-image: url(../img/right_line\ \(2\).png);
+  background-size: contain;
+  vertical-align: middle;
+}
+.challengedProblem__list--two a{
+	padding-right:  350px;
+}
+/* 全ての検定 */
+.allProblem__container{
+	background-color: #fff;
+	width: 430px;
+	padding: 20px 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.allProblem__container img{
+	width: 100px;
+	height: 99px;
+}
+.allProblem__title__text{
+	font-size: 22px;
+	margin-top: 60px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+.allProblem__text{
+	text-align: left;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.MoreInfo{
+	margin-left: 300px;
+	margin-top: 20px;
+}
+.MoreInfo_text{
+	background-color: rgb(7, 47, 74);
+	color: #fff;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	width: 100px;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
