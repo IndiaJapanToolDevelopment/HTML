@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>アニメ検定</title>
+	<meta name="description" content="ディスクリプションを入力">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- [if lt IE 9] -->
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<!-- [endif] -->
+	<script src="main.js" defer></script>
+</head>
+
+<body>
+	<!-- ヘッダー -->
+	<header id="header">
+		<div class="header__logo">
+			<h1 class="site-title">
+				<a href="#">
+					アニメ検定のロゴ
+				</a>
+			</h1>
+		</div>
+		<nav>
+			<ul>
+				<a href="#">
+					<li>
+						<div class="aside__container__list aside__container__list--one">
+							<p class="myPage">マイページ</p>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aside__container__list aside__container__list--two">
+							<p class="personalSettings">個人設定</p>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="loginButton">
+							<p class="loginButton__text">山田太郎</p>
+						</div>
+					</li>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<!-- hiddenで消えている部分 -->
+	<div class="dropdown__menu" hidden>
+		<div class="dropdown__menu__list--one dropdown__menu__list"><a href="#">ゲストログイン</a></div>
+		<div class="dropdown__menu__list--two dropdown__menu__list"><a href="#">個人設定</a></div>
+		<div class="dropdown__menu__list--three dropdown__menu__list"><a href="#">サインアウト</a></div>
+	</div>
+	<main>
+		<h2>カテゴリー</h2>
+		<ul class="category__list">
+			<a href="#">
+				<li class="category__list--one">忍者ハットリくん</li>
+			</a>
+			<a href="#">
+				<li class="category__list--two">クレヨンしんちゃん</li>
+			</a>
+			<a href="#">
+				<li class="category__list--three">ドラゴンボール</li>
+			</a>
+			<a href="#">
+				<li class="category__list--four">ワンピース</li>
+			</a>
+			<a href="#">
+				<li class="category__list--five">ナルト</li>
+			</a>
+			<a href="#">
+				<li class="category__list--six">デスノート</li>
+			</a>
+		</ul>
+		<div class="challengedQuiz">
+			<h2>あなたがチャレンジした問題</h2>
+			<ul class="challengedQuiz__list">
+				<a href="#">
+					<li class="challengedQuiz__list--one">最終問題</li>
+				</a>
+				<a href="#" class="challengedQuiz__list--two">
+					<li class="challengedQuiz__list--two">タイトル</li>
+				</a>
+				<a href="#">
+					<li class="challengedQuiz__list--three">受験回数</li>
+				</a>
+				<a href="#">
+					<li class="challengedQuiz__list--four">正解率</li>
+				</a>
+			</ul>
+		</div>
+		<h2>すべての検定</h2>
+		<div class="allQuiz flex">
+			<div class="allQuiz__container Ninzyahattori">
+				<div class="flex">
+					<img src="./img/allPloblem__NInzyahattori.jpeg" alt="忍者ハットリくん">
+					<p class="Ninzyahattori__title__text allQuiz__title__text">忍者ハットリくん【基礎】</p>
+				</div>
+				<hr>
+				<p class="Ninzyahattori__text allQuiz__text">インドで大人気の国民的アニメ「忍者ハットリくん」
+					問題としては、忍者ハットリくんの登場人物の名前や
+					年齢など基礎的な問題が出題される。
+				</p>
+				<div class="moreInfo">
+					<a class="moreInfo_text" href="#">MORE INFO</a>
+				</div>
+			</div>
+			<div class="allQuiz__container">
+				<div class="flex">
+					<img src="./img/allPloblem__Kureyonsintyan.png" alt="クレヨンしんちゃん">
+					<p class="allQuiz__title__text">クレヨンしんちゃん【基礎】</p>
+				</div>
+				<hr>
+				<p class="allQuiz__text">インドで大人気の国民的アニメ「クレヨンしんちゃん」
+					問題としては、クレヨンしんちゃんの登場人物の名前や
+					年齢など基礎的な問題が出題される。
+				</p>
+				<div class="moreInfo">
+					<a class="moreInfo_text" href="#">MORE INFO</a>
+				</div>
+			</div>
+			<div class="allQuiz__container">
+				<div class="flex">
+					<img src="./img/allPloblem__DragonballZ.png" alt="ドラゴンボール">
+					<p class="allQuiz__title__text">ドラゴンボール【基礎】</p>
+					<hr>
+				</div>
+				<p class="allQuiz__text">インドで大人気の国民的アニメ「ドラゴンボール」
+					問題としては、ドラゴンボールの登場人物の名前や
+					年齢など基礎的な問題が出題される。
+				</p>
+				<div class="moreInfo">
+					<a class="moreInfo_text" href="#">MORE INFO</a>
+				</div>
+			</div>
+			<div class="allQuiz__container">
+				<div class="flex">
+					<img src="./img/allPloblem__Onepeace 1.png" alt="ワンピース">
+					<p class="allQuiz__title__text">ワンピース【基礎】</p>
+					<hr>
+				</div>
+				<p class="allQuiz__text">インドで大人気の国民的アニメ「ワンピース」
+					問題としては、ワンピースの登場人物の名前や
+					年齢など基礎的な問題が出題される。
+				</p>
+				<div class="moreInfo">
+					<a class="moreInfo_text" href="#">MORE INFO</a>
+				</div>
+			</div>
+			<div class="allQuiz__container">
+				<div class="flex">
+					<img src="./img/allQuiz__Naruto.png" alt="ナルト">
+					<p class="allQuiz__title__text">NARUTO【基礎】</p>
+					<hr>
+				</div>
+				<p class="allQuiz__text">インドで大人気の国民的アニメ「NARUTO」
+					問題としては、NARUTOの登場人物の名前や
+					年齢など基礎的な問題が出題される。
+				</p>
+				<div class="moreInfo">
+					<a class="moreInfo_text" href="#">MORE INFO</a>
+				</div>
+			</div>
+			<div class="allQuiz__container">
+				<div class="flex">
+					<img src="./img/allQuiz__DeathNote.png" alt="デスノート">
+					<p class="allQuiz__title__text">Death Note【基礎】</p>
+					<hr>
+				</div>
+				<p class="allQuiz__text">インドで大人気の国民的アニメ「Death Note」
+					問題としては、クレヨンしんちゃんの登場人物の名前や
+					年齢など基礎的な問題が出題される。
+				</p>
+				<div class="moreInfo">
+					<a class="moreInfo_text" href="#">MORE INFO</a>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
