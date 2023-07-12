@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+body {
+	font-size: 18px;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+/* header,main共通部分 */
+h2 {
+	padding: 40px 0;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+hr {
+	text-align: center;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* headere部分 */
+/*
+.site-title {
+	background-color: #4FAE5F !important;
+}*/
+
+.logo {
+	padding: 15px 0;
+	width: 200px;
+	height: 15vh;
+}
+
+.logo p {
+	color: #fff;
+	text-align: center;
+}
+
+.left__aside__container {
+	background-color: rgb(7, 47, 74);
+
+}
+
+.aside__container p,
+.aside__container a {
+	color: #fff;
+	padding: 15px 0;
+}
+
+.myPage {
+	margin-top: 25px;
+	translate: 30px;
+	color: #fff;
+}
+
+.myPage::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	/*画像の幅*/
+	height: 25px;
+	/*画像の高さ*/
+	translate: -1px -3px;
+	background-image: url(../img/home_3_line\ \(1\).png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+.personalSettings {
+	margin-top: 25px;
+	margin-left: 20px;
+	color: #fff;
+}
+
+.personalSettings::before {
+	content: "";
+	display: inline-block;
+	width: 30px;
+	/*画像の幅*/
+	height: 25px;
+	/*画像の高さ*/
+	translate: -1px -3px;
+	background-image: url(../img/face_line.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+.aside__container__list {
+	margin-top: -10px;
+}
+
+/* main部分 */
+/* TopBar部分 */
+
+.TopBar {
+	background-color: #fff;
+	z-index: 9999;
+}
+
+.loginButton {
+	background-color: rgb(16, 113, 177);
+	width: 160px;
+	margin-top: 10px;
+	padding: 15px 0;
+
+}
+
+.dropdown__menu {
+	position: absolute;
+	right: 4%;
+	top: 70px
+}
+
+.dropdown__menu a {
+	color: #fff;
+}
+
+.dropdown__menu__list {
+	background-color: rgb(7, 47, 74);
+	width: 160px;
+	height: 40px;
+	text-align: left;
+}
+
+.dropdown__menu__list a {
+	font-size: 16px;
+	padding-left: 25px;
+	display: inline;
+	vertical-align: text-top;
+}
+
+.dropdown__menu__list:hover{
+	background-color: #999;
+}
+
+.loginButton__text {
+	color: #fff;
+	text-align: center;
+}
+
+.loginButton__text::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	/*画像の幅*/
+	height: 20px;
+	/*画像の高さ*/
+	translate: -6px -1px;
+	background-image: url(../img/face_line.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.loginButton__text::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	/*画像の幅*/
+	height: 20px;
+	/*画像の高さ*/
+	translate: 10px -1px;
+	background-image: url(../img/down_line.png);
+	background-size: contain;
+	vertical-align: middle;
+}
+
+/* main------------------------------------------------------------ */
+main {
+	/*修正部分 */
+	/* width: 100vh; */
+	/* margin: 0 auto; */
+	background-color: #F5F5F5;
+	padding: 0 10%;
+}
+
+.challengedQuiz__list{
+	background-color: #E5E5E5;
+}
+.category__list li,
+.challengedQuiz__list li {
+	background-color: #E5E5E5;
+	padding: 20px 25px;
+}
+
+.category__list li::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	/*画像の幅*/
+	height: 20px;
+	/*画像の高さ*/
+	translate: -1px -1px;
+	background-image: url(../img/right_line\ \(2\).png);
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.challengedQuiz__list--two  {
+	padding-right: 350px;
+}
+
+/* 全ての検定 */
+.allQuiz__container {
+	background-color: #fff;
+	width: 430px;
+	padding: 20px 30px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.allQuiz{
+	justify-content: space-around;
+}
+
+.allQuiz__container img {
+	width: 100px;
+	height: 99px;
+	object-fit: cover;
+}
+
+.allQuiz__title__text {
+	font-size: 22px;
+	margin-top: 60px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+.allQuiz__text {
+	text-align: left;
+	font-size: 16px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.moreInfo {
+	/* margin-left: 300px; */
+	/* margin-top: 20px; */
+	position: absolute;
+	right: 14px;
+	bottom: 14px;
+}
+
+.moreInfo_text {
+	background-color: rgb(7, 47, 74);
+	color: #fff;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	width: 100px;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+/*スマホ対応-----------------------------------------------------*/
+@media screen and (max-width: 1024px){
+	.allQuiz__container{
+		width: 100%;
+	}
+
+	hr{
+		display: block;
+		width: 100%;
+	}
+}
+
+/* ７/5 */
+
+
+
+.aside__container__list {
+	display: flex;
+}
+
+#header {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0 4%;
+	height: 80px;
+	background-color: #3D4555;
+}
+
+
+#header ul {
+	display: flex;
+	padding-bottom: 10px;
+	align-items: center;
+}
+
+#header li {
+	font-size: 0.9rem;
+	margin-left: 30px;
+}
+
+
+header li a {
+	transition: all 0.3s;
+}
+
+#header li a:hover {
+	opacity: 0.5;
+}
+
+#header li img.icon {
+	width: 30px;
+}
+
+
+.site-title a {
+	background-color: #fff;
+	width: 200px;
+	height: 10vh;
+	padding: 15px 10px;
+}
+
+/* 7/12 */
+/*
+nav {
+	background-color: #3D4555;
+}*/
+
+.header__logo{
+	background-color: #4FAE5F;
+	z-index: 5;
+}
+
+
+/*スマホ対応-----------------------------------------------------*/
+@media screen and (max-width: 1024px){
+	
+}
