@@ -4,6 +4,7 @@ body {
 	font-size: 18px;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
+	background-color: #F5F5F5;
 }
 
 /* header,main共通部分 */
@@ -12,7 +13,6 @@ h2 {
 }
 
 ul {
-	display: flex;
 	list-style: none;
 }
 
@@ -33,10 +33,9 @@ a {
 }
 
 /* headere部分 */
-/*
-.site-title {
-	background-color: #4FAE5F !important;
-}*/
+.header__logo img {
+	width: 180px;
+}
 
 .logo {
 	padding: 15px 0;
@@ -106,7 +105,12 @@ a {
 
 /* main部分 */
 /* TopBar部分 */
-
+main ul{
+	display: flex;
+}
+.nav__container{
+	display: flex;
+}
 .TopBar {
 	background-color: #fff;
 	z-index: 9999;
@@ -144,7 +148,7 @@ a {
 	vertical-align: text-top;
 }
 
-.dropdown__menu__list:hover{
+.dropdown__menu__list:hover {
 	background-color: #999;
 }
 
@@ -181,20 +185,35 @@ a {
 
 /* main------------------------------------------------------------ */
 main {
-	/*修正部分 */
-	/* width: 100vh; */
-	/* margin: 0 auto; */
 	background-color: #F5F5F5;
-	padding: 0 10%;
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 2%;
 }
 
-.challengedQuiz__list{
+.challengedQuiz__list {
 	background-color: #E5E5E5;
+	border-bottom: solid 1px gray;
+	max-width: 700px;
 }
+
 .category__list li,
 .challengedQuiz__list li {
 	background-color: #E5E5E5;
+	padding: 20px 4%;
+}
+
+.challengedQuiz__list li {
 	padding: 20px 25px;
+}
+
+.category__list--one {
+	margin-bottom: 20px;
+}
+
+.category__list--three,
+.category__list--six {
+	padding: 0;
 }
 
 .category__list li::before {
@@ -210,8 +229,26 @@ main {
 	vertical-align: middle;
 }
 
-.challengedQuiz__list--two  {
-	padding-right: 350px;
+.challengedQuiz__list--two {
+	padding-right: 150px;
+}
+
+
+
+.category__list__item {
+	width: 250px;
+	border-bottom: solid 1px gray;
+}
+
+/* 受けた検定の詳細部分 */
+.challengedQuiz__moreView {
+	border-bottom: solid 1px gray;
+	max-width: 700px;
+}
+
+.challengedQuiz__moreView ul,
+.challengedQuiz__moreView li {
+	background-color: #fff;
 }
 
 /* 全ての検定 */
@@ -223,7 +260,7 @@ main {
 	position: relative;
 }
 
-.allQuiz{
+.allQuiz {
 	justify-content: space-around;
 }
 
@@ -266,17 +303,6 @@ main {
 	border-radius: 5px;
 }
 
-/*スマホ対応-----------------------------------------------------*/
-@media screen and (max-width: 1024px){
-	.allQuiz__container{
-		width: 100%;
-	}
-
-	hr{
-		display: block;
-		width: 100%;
-	}
-}
 
 /* ７/5 */
 
@@ -299,7 +325,6 @@ main {
 
 
 #header ul {
-	display: flex;
 	padding-bottom: 10px;
 	align-items: center;
 }
@@ -323,26 +348,81 @@ header li a {
 }
 
 
-.site-title a {
-	background-color: #fff;
-	width: 200px;
-	height: 10vh;
-	padding: 15px 10px;
-}
 
-/* 7/12 */
-/*
-nav {
-	background-color: #3D4555;
-}*/
 
-.header__logo{
-	background-color: #4FAE5F;
-	z-index: 5;
+.sp__only {
+	display: none;
+	/*レスポンシブに対応するまで消去*/
 }
 
 
-/*スマホ対応-----------------------------------------------------*/
-@media screen and (max-width: 1024px){
-	
+/*レスポンシブ対応-----------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+	.allQuiz__container {
+		width: 100%;
+	}
+
+	hr {
+		display: block;
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.category__list__item {
+		width: 210px;
+	}
+}
+
+
+
+@media screen and (max-width: 710px) {
+
+	/* .category__list--three,
+	.category__list--five,
+	.category__list--six{
+		display: none;
+	}*/
+	.sp__only{
+		display: block;
+	} 
+	.pc__only{
+		display: none;
+	}
+	.challengedQuiz__list {
+		font-size: 16px;
+	}
+
+	.category__list li{
+		padding: 20px 0;
+	}
+
+	.challengedQuiz__list--two {
+		padding-right: 80px;
+	}
+
+	.category__list__item{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.challengedQuiz__list--two {
+		padding-right: 30px;
+	}
+
+	.challengedQuiz__list li {
+		padding: 15px 13px;
+	}
+}
+
+@media screen and (max-width: 418px) {
+
+	.challengedQuiz__list--three,
+	.challengedQuiz__list--four {
+		display: none;
+	}
 }
