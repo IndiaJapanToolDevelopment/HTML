@@ -8,9 +8,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/hamburger.css">
+
 	<!-- [if lt IE 9] -->
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<!-- ハンバーガーメニュー -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-6/js/5-2-6.js"></script>
 	<!-- [endif] -->
 	<script src="main.js" defer></script>
 </head>
@@ -21,33 +27,51 @@
 		<div class="header__logo">
 			<h1 class="site-title">
 				<a href="#">
-					アニメ検定のロゴ
+					<img src="./img/logo.png" width="50%">
 				</a>
 			</h1>
 		</div>
 		<nav>
-			<ul>
+			<ul class="nav__container">
 				<a href="#">
 					<li>
-						<div class="aside__container__list aside__container__list--one">
+						<div class="aside__container__list aside__container__list--one pc__only">
 							<p class="myPage">マイページ</p>
 						</div>
 					</li>
 				</a>
 				<a href="#">
 					<li>
-						<div class="aside__container__list aside__container__list--two">
+						<div class="aside__container__list aside__container__list--two pc__only">
 							<p class="personalSettings">個人設定</p>
 						</div>
 					</li>
 				</a>
 				<a href="#">
 					<li>
-						<div class="loginButton">
+						<div class="loginButton pc__only">
 							<p class="loginButton__text">山田太郎</p>
 						</div>
 					</li>
 				</a>
+				<!-- ハンバーガーメニュー -->
+				<div class="sp__only">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<nav class="globalMenuSp">
+						<ul>
+							<li><a href="#">Menu1</a></li>
+							<li><a href="#">Menu2</a></li>
+							<li><a href="#">Menu3</a></li>
+							<li><a href="#">Menu4</a></li>
+							<li><a href="#">Menu5</a></li>
+						</ul>
+					</nav>
+				</div>
 			</ul>
 		</nav>
 	</header>
@@ -59,26 +83,49 @@
 	</div>
 	<main>
 		<h2>カテゴリー</h2>
-		<ul class="category__list">
+		<ul class="category__list category__list--one pc__only">
 			<a href="#">
-				<li class="category__list--one">忍者ハットリくん</li>
+				<li class="category__list__item category__list--one">忍者ハットリくん</li>
 			</a>
 			<a href="#">
-				<li class="category__list--two">クレヨンしんちゃん</li>
+				<li class="category__list__item category__list--two">クレヨンしんちゃん</li>
 			</a>
 			<a href="#">
-				<li class="category__list--three">ドラゴンボール</li>
-			</a>
-			<a href="#">
-				<li class="category__list--four">ワンピース</li>
-			</a>
-			<a href="#">
-				<li class="category__list--five">ナルト</li>
-			</a>
-			<a href="#">
-				<li class="category__list--six">デスノート</li>
+				<li class="category__list__item category__list--three">ドラゴンボール</li>
 			</a>
 		</ul>
+		<ul class="category__list category__list--two pc__only">
+			<a href="#">
+				<li class="category__list__item category__list--four">ワンピース</li>
+			</a>
+			<a href="#">
+				<li class="category__list__item category__list--five">ナルト</li>
+			</a>
+			<a href="#">
+				<li class="category__list__item category__list--six">デスノート</li>
+			</a>
+		</ul>
+
+		<ul class="category__list category__list__three sp__only">
+			<a href="#">
+				<li class="category__list__item category__list--five">忍者ハットリくん</li>
+			</a>
+			<a href="#">
+				<li class="category__list__item category__list--six">クレヨンしんちゃん</li>
+			</a>
+			<li class="category__list__item category__list--five">ドラゴンボール</li>
+			</a>
+			<a href="#">
+				<li class="category__list__item category__list--six">ワンピース</li>
+			</a>
+			<a href="#">
+				<li class="category__list__item category__list--five">ナルト</li>
+			</a>
+			<a href="#">
+				<li class="category__list__item category__list--six">デスノート</li>
+			</a>
+		</ul>
+
 		<div class="challengedQuiz">
 			<h2>あなたがチャレンジした問題</h2>
 			<ul class="challengedQuiz__list">
@@ -95,6 +142,23 @@
 					<li class="challengedQuiz__list--four">正解率</li>
 				</a>
 			</ul>
+		</div>
+		<div class="challengedQuiz__moreView">
+			<ul class="challengedQuiz__list">
+				<a href="#">
+					<li class="challengedQuiz__list--one">22.07.13</li>
+				</a>
+				<a href="#" class="challengedQuiz__list--two">
+					<li class="challengedQuiz__list--two">ワンピース</li>
+				</a>
+				<a href="#">
+					<li class="challengedQuiz__list--three">2</li>
+				</a>
+				<a href="#">
+					<li class="challengedQuiz__list--four">80%</li>
+				</a>
+			</ul>
+
 		</div>
 		<h2>すべての検定</h2>
 		<div class="allQuiz flex">
