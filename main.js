@@ -1,4 +1,3 @@
-
 //	dropdownMenu     ///////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function() {
 	const loginButton = document.querySelector(".loginButton");
@@ -22,4 +21,9 @@ $(function() {
 	    }
 	});
   });
+
+  $(".openbtn").click(function () {
+	$(this).toggleClass('active');
+});
     
+
