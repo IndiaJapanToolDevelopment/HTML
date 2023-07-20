@@ -194,7 +194,6 @@ main {
 .challengedQuiz__list {
 	background-color: #E5E5E5;
 	border-bottom: solid 1px gray;
-	max-width: 700px;
 }
 
 .category__list li,
@@ -243,7 +242,10 @@ main {
 /* 受けた検定の詳細部分 */
 .challengedQuiz__moreView {
 	border-bottom: solid 1px gray;
-	max-width: 700px;
+}
+
+.challengedQuiz__moreView__list--four{
+	padding-left: 45px;
 }
 
 .challengedQuiz__moreView ul,
@@ -261,7 +263,7 @@ main {
 }
 
 .allQuiz {
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .allQuiz__container img {
@@ -389,6 +391,10 @@ header li a {
 	} 
 	.pc__only{
 		display: none;
+	}
+
+	#header li{
+		margin-left: 0;
 	}
 	.challengedQuiz__list {
 		font-size: 16px;
