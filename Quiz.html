@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>アニメ検定</title>
+	<meta name="description" content="ディスクリプションを入力">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/hamburger.css">
+	<!-- [if lt IE 9] -->
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<!-- ハンバーガーメニュー -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-6/js/5-2-6.js"></script>
+	<!-- [endif] -->
+	<script src="main.js" defer></script>
+</head>
+
+<body>
+	<!-- ヘッダー -->
+	<header id="header">
+		<div class="header__logo">
+			<h1 class="site-title">
+				<a href="./index.html">
+					<img src="./img/logo.png" width="50%">
+				</a>
+			</h1>
+		</div>
+		<nav>
+			<ul class="nav__container">
+				<a href="#">
+					<li>
+						<div class="aside__container__list aside__container__list--one pc__only">
+							<p class="myPage">マイページ</p>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="aside__container__list aside__container__list--two pc__only">
+							<p class="personalSettings">個人設定</p>
+						</div>
+					</li>
+				</a>
+				<a href="#">
+					<li>
+						<div class="loginButton pc__only">
+							<p class="loginButton__text">山田太郎</p>
+						</div>
+					</li>
+				</a>
+				<!-- ハンバーガーメニュー -->
+				<div class="sp__only">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<nav class="globalMenuSp">
+						<ul>
+							<li><a href="#">マイページ</a></li>
+							<li><a href="#">個人設定</a></li>
+							<li><a href="#">山田太郎</a></li>
+						</ul>
+					</nav>
+				</div>
+			</ul>
+		</nav>
+	</header>
+	<!-- hiddenで消えている部分 -->
+	<div class="dropdown__menu" hidden>
+		<div class="dropdown__menu__list--one dropdown__menu__list"><a href="#">ゲストログイン</a></div>
+		<div class="dropdown__menu__list--two dropdown__menu__list"><a href="#">個人設定</a></div>
+		<div class="dropdown__menu__list--three dropdown__menu__list"><a href="#">サインアウト</a></div>
+	</div>
+	<main>
+		<div class="pageSelect__container">
+			<a href="./index.html">
+				<div class="myPage__text">マイページ > </div>
+			</a>
+			<a href="./index.html">
+				<div class="nextQuiz_text">忍者ハットリくん【基礎】</div>
+			</a>
+		</div>
+		<div class="quiz__content">
+			<p class="quiz__text--title">
+				忍者ハットリくん【基礎】
+			</p>
+			<div class="quiz__select__content">
+				<p class="quiz__quizTitle--text">
+					<span class="quiz__quizTitle__text--number">Q1</span>「忍者ハットリくん」の作者の名前は？
+				</p>
+				<p class="quizs__number">1/20</p>
+				<div class="quiz__select__list">
+					<div class="quiz__select__wrapper">
+						<p class="quiz__number">A</p>
+						<p class="quiz__answer--text">藤子・F・不二雄</p>
+					</div>
+					<div class="quiz__select__wrapper">
+						<p class="quiz__number">B</p>
+						<p class="quiz__answer--text">藤子不二雄A</p>
+					</div>
+					<div class="quiz__select__wrapper">
+						<p class="quiz__number">C</p>
+						<p class="quiz__answer--text">赤塚不二夫</p>
+					</div>
+					<div class="quiz__select__wrapper">
+						<p class="quiz__number">D</p>
+						<p class="quiz__answer--text">吉澤やすみ</p>
+					</div>
+				</div>
+				<div class="answer__button__content">
+					<a href="#">
+						<div class="answer__button__wrapper">回答する</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="back__myPage">
+			<a href="./index.html">
+				マイページに戻る
+			</a>
+		</div>
+		</div>
+
+
+
+	</main>
+	<footer>
+		<div class="footer">
+			<p class="footer__text">
+				コピーライト
+			</p>
+		</div>
+	</footer>
+</body>
+
+</html>
+
+
+
+<!-- <div style="left: 140px; top: 201px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">マイページ > </div>
+<div style="left: 213px; top: 201px; position: absolute; color: #949497; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">忍者ハットリくん </div>
+<div style="left: 137px; top: 266px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 600; word-wrap: break-word">忍者ハットリくん</div>
+<div style="width: 1010px; height: 680px; left: 135px; top: 320px; position: absolute; background: white; box-shadow: 5px 5px 5px 5px rgba(216, 216, 219, 0.25); border-radius: 15px"></div>
+<div style="left: 350px; top: 779px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">吉澤やすみ</div>
+<div style="width: 910px; height: 0px; left: 185px; top: 433px; position: absolute; border: 2.50px #D8D8D8 solid"></div>
+<div style="width: 910px; height: 0px; left: 185px; top: 535px; position: absolute; border: 0.50px #D8D8D8 dotted"></div>
+<div style="width: 910px; height: 0px; left: 185px; top: 635px; position: absolute; border: 0.50px #D8D8D8 dotted"></div>
+<div style="width: 910px; height: 0px; left: 185px; top: 735px; position: absolute; border: 0.50px #D8D8D8 dotted"></div>
+<div style="width: 910px; height: 0px; left: 185px; top: 837px; position: absolute; border: 2.50px #D8D8D8 solid"></div>
+<div style="left: 624.50px; top: 399px; position: absolute; color: #949497; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">1/20</div>
+<div style="width: 328px; height: 29px; left: 185px; top: 355px; position: absolute">
+  <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 600; word-wrap: break-word"> Q1</div>
+  <div style="left: 40px; top: 7px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">「忍者ハットリくん」の作者の名前は？</div>
+</div>
+<div style="width: 180px; height: 50px; left: 550px; top: 887px; position: absolute">
+  <div style="width: 180px; height: 50px; left: 0px; top: 0px; position: absolute; background: #414143; border-radius: 5px"></div>
+  <div style="left: 58px; top: 15px; position: absolute; color: white; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">回答する</div>
+</div>
+<div style="left: 135px; top: 1043px; position: absolute; color: #949497; font-size: 16px; font-family: Inter; font-weight: 400; text-decoration: underline; word-wrap: break-word">マイページへ戻る</div>
+<div style="left: 229px; top: 779px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">D</div>
+<div style="left: 229px; top: 476px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">A</div>
+<div style="left: 230px; top: 576px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">B</div>
+<div style="left: 229px; top: 676px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 600; word-wrap: break-word">C</div>
+<div style="left: 350px; top: 476px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">藤子・F・不二雄</div>
+<div style="left: 350px; top: 576px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">藤子不二雄A</div>
+<div style="left: 350px; top: 676px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 400; word-wrap: break-word">赤塚不二夫</div> -->
