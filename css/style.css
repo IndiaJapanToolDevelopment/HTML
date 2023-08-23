@@ -459,7 +459,105 @@ footer {
 	text-decoration: underline #949497;
 }
 
+/* sresult.html----------------------------------------------------- */
+.quiz__quizTitle__text__title--result{
+	display: block;
+	font-size: 40px;
+	font-weight: 600;
+	padding-top: 50px;
+	padding-left: 3.47%;
+}
 
+.quiz__quizTitle__text__answerRate--result{
+	font-size: 20px;
+	font-weight: 600;
+	padding-top: 15px;
+	padding-left: 3.47%;
+}
+
+.point__content{
+	text-align: right;
+	padding-right: 3.47%;
+}
+
+.point__text{
+	font-size: 48px;
+	font-weight: 600;
+}
+
+.result__point__number{
+	color: var(--forest-700, #1D8B56);
+	font-size: 96px !important;
+}
+.resultHr{
+	width: 34.131%;
+	margin-top: 15px;
+	margin-right:0px;
+}
+
+.test__numberOfTimes{
+	margin-top: 25px;
+	margin-bottom: 73px;
+}
+
+.quiz__nubmer--result{
+	display: flex;
+}
+.quiz__nubmer__text--result{
+	background-color: #949497;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.quiz__nubmer__text--result p{
+	display: inline-block;
+}
+
+.quiz__result__container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5px;
+	margin: 0 13.39%;
+}
+
+.result{
+	background-color: #E8E8EB;
+	width: 100px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.embarrassment{
+	background: var(--sun-100, #FFC8B8);
+}
+
+.retry__button__content {
+	background-color: #414143;
+	text-align: center;
+	align-items: center;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 180px;
+	height: 50px;
+	margin-top: 48px;
+}
+
+.retry__button__wrapper {
+	display: inline-block;
+	color: #fff;	
+	padding-top: 10px;
+}
+
+.retry__button__wrapper a {
+	color: #fff;
+}
 
 
 
@@ -468,6 +566,10 @@ footer {
 
 
 .sp__only {
+	display: none;
+}
+
+.sp__only--br{
 	display: none;
 }
 
@@ -489,17 +591,25 @@ footer {
 	.category__list__item {
 		width: 210px;
 	}
+	.result__point__number{
+		display: block;
+		padding-right: 45px;
+		margin-top: 33px;
+	}
+	.sp__only--br{
+		display: block;
+
+	}
+	.foundation{
+		display: block;
+		padding-top: 15px;
+	}
 }
 
 
 
 @media screen and (max-width: 710px) {
 
-	/* .category__list--three,
-	.category__list--five,
-	.category__list--six{
-		display: none;
-	}*/
 	.sp__only {
 		display: block;
 	}
