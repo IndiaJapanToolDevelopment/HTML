@@ -387,10 +387,25 @@ footer {
 }
 
 .quiz__select__content {
+	position: relative;
 	background-color: #fff;
 	border-radius: 15px;
 	box-shadow: 5px 5px 5px 5px rgba(216, 216, 219, 0.25);
 	padding-bottom: 63px;
+}
+
+.circle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.embarrassment{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
 }
 
 .quiz__quizTitle--text{
