@@ -549,10 +549,6 @@ footer {
 	justify-content: center;
 }
 
-.embarrassment{
-	background: var(--sun-100, #FFC8B8);
-}
-
 .retry__button__content {
 	background-color: #414143;
 	text-align: center;
